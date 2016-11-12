@@ -9,6 +9,7 @@ target 'pics-security' do
 
   # Pods for pics-security
   pod 'KeychainAccess'
+  pod ‘RNCryptor’
 
 end
 

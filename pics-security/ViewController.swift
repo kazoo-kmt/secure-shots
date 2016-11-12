@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import KeychainAccess
+import RNCryptor
 
 class ViewController: UIViewController {
   var device: AVCaptureDevice!
@@ -19,9 +20,8 @@ class ViewController: UIViewController {
   var count: Int = 0
   let numberOfShots = 10
 
-
-  
   let keychain = Keychain(service: "com.mycompany.pics-security")
+  let password = "passwordpassword"
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -77,14 +77,12 @@ class ViewController: UIViewController {
     let connection = output.connection(withMediaType: AVMediaTypeVideo)
     output.captureStillImageAsynchronously(from: connection) {(imageDataBuffer, error) -> Void in
       let imageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-//      let image = UIImage(data: imageData)!
-      let imageDataStrBase64: String = imageData.base64EncodedString()
-//      print(#line, imageDataStrBase64)
+      let cipherImageData = RNCryptor.encrypt(data: imageData, withPassword: self.password)
       
-      // Store image
-//      UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
+      let cipherimageDataStrBase64: String = cipherImageData.base64EncodedString()
+      
       do {
-        try self.keychain.set(imageDataStrBase64, key: "\(self.count)")
+        try self.keychain.set(cipherimageDataStrBase64, key: "\(self.count)")
         print("\(self.count)")
       }
       catch let error {

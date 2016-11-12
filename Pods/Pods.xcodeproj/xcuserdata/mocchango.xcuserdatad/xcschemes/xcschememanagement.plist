@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNCryptor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>838A2C6DA366DE138E5FDF1AF19D94C0</key>
+		<key>10831B103381ABD772436C6AAFBCAA7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBAAD10AFC765B1E765C3E59BCA878B5</key>
+		<key>3AE7F311CF6FE57BB3B7B9DD2113499C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>838A2C6DA366DE138E5FDF1AF19D94C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
