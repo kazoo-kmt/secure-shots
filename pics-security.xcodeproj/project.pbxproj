@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		003E8BD079DFE47A73301CF3 /* Pods_pics_security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */; };
+		C951176E1DD7AE4500B73624 /* Pods_pics_security.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C95117711DD7AF2300B73624 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C951176F1DD7AF2300B73624 /* KeychainAccess.framework */; };
+		C95117721DD7AF2300B73624 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95117701DD7AF2300B73624 /* RNCryptor.framework */; };
+		C95117731DD7AFBD00B73624 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C951176F1DD7AF2300B73624 /* KeychainAccess.framework */; };
+		C95117741DD7AFBD00B73624 /* KeychainAccess.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C951176F1DD7AF2300B73624 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C95117751DD7AFBD00B73624 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95117701DD7AF2300B73624 /* RNCryptor.framework */; };
+		C95117761DD7AFBD00B73624 /* RNCryptor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C95117701DD7AF2300B73624 /* RNCryptor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C95184301DD65E2E0023705B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951842F1DD65E2E0023705B /* AppDelegate.swift */; };
 		C95184321DD65E2E0023705B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95184311DD65E2E0023705B /* ViewController.swift */; };
 		C95184351DD65E2E0023705B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95184331DD65E2E0023705B /* Main.storyboard */; };
@@ -15,10 +22,27 @@
 		C951843A1DD65E2E0023705B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95184381DD65E2E0023705B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C951176D1DD7ADFF00B73624 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C95117741DD7AFBD00B73624 /* KeychainAccess.framework in CopyFiles */,
+				C95117761DD7AFBD00B73624 /* RNCryptor.framework in CopyFiles */,
+				C951176E1DD7AE4500B73624 /* Pods_pics_security.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C59B4135AC2781B8ED85BF3 /* Pods-pics-security.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pics-security.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pics-security/Pods-pics-security.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pics_security.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B31DFD57016E15242CF7A6E /* Pods-pics-security.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pics-security.release.xcconfig"; path = "Pods/Target Support Files/Pods-pics-security/Pods-pics-security.release.xcconfig"; sourceTree = "<group>"; };
+		C951176F1DD7AF2300B73624 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = "../../../../Library/Developer/Xcode/DerivedData/pics-security-hjxssdxsvhmlcpdafcgjjbttkkec/Build/Products/Debug-iphoneos/KeychainAccess/KeychainAccess.framework"; sourceTree = "<group>"; };
+		C95117701DD7AF2300B73624 /* RNCryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RNCryptor.framework; path = "../../../../Library/Developer/Xcode/DerivedData/pics-security-hjxssdxsvhmlcpdafcgjjbttkkec/Build/Products/Debug-iphoneos/RNCryptor/RNCryptor.framework"; sourceTree = "<group>"; };
 		C951842C1DD65E2E0023705B /* pics-security.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pics-security.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C951842F1DD65E2E0023705B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C95184311DD65E2E0023705B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95117711DD7AF2300B73624 /* KeychainAccess.framework in Frameworks */,
+				C95117721DD7AF2300B73624 /* RNCryptor.framework in Frameworks */,
+				C95117751DD7AFBD00B73624 /* RNCryptor.framework in Frameworks */,
+				C95117731DD7AFBD00B73624 /* KeychainAccess.framework in Frameworks */,
 				003E8BD079DFE47A73301CF3 /* Pods_pics_security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +80,8 @@
 		9D7A43CE487E1A6797C70618 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C951176F1DD7AF2300B73624 /* KeychainAccess.framework */,
+				C95117701DD7AF2300B73624 /* RNCryptor.framework */,
 				5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */,
 			);
 			name = Frameworks;
@@ -101,6 +131,7 @@
 				C951842A1DD65E2E0023705B /* Resources */,
 				C814C13D94FAB3A51E1E80B3 /* [CP] Embed Pods Frameworks */,
 				AC2B89C7823526F774C5A78D /* [CP] Copy Pods Resources */,
+				C951176D1DD7ADFF00B73624 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -163,7 +194,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		226B7B1ADEE588F22B53F2AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -178,7 +209,7 @@
 		};
 		AC2B89C7823526F774C5A78D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -186,14 +217,14 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pics-security/Pods-pics-security-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C814C13D94FAB3A51E1E80B3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -201,7 +232,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pics-security/Pods-pics-security-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -341,7 +372,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 865NZFXY4B;
 				INFOPLIST_FILE = "pics-security/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.pics-security";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -358,7 +389,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 865NZFXY4B;
 				INFOPLIST_FILE = "pics-security/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.pics-security";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
