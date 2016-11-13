@@ -23,13 +23,14 @@ class ViewController: UIViewController {
   let numberOfShots = 10
 
   let keychain = Keychain(service: "com.mycompany.pics-security")
-  let password = "passwordpassword" // NTR
+  let keyForPassword = "keyforpassword"
   
   var label: UILabel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
     
     // Create a directory to store images
     setupDirectory()
@@ -86,6 +87,21 @@ class ViewController: UIViewController {
 
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    // Create a password to encrypt images
+    do {
+      let existingPassword = try self.keychain.get("\(self.keyForPassword)")
+      print(#line, "Current password in Keychain: \(existingPassword)")
+      if existingPassword == nil {
+        setupPassword()
+      }
+    } catch {
+      print(#line, error)
+    }
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
@@ -114,13 +130,50 @@ class ViewController: UIViewController {
   }
   
   
+  // MARK: Alert for password input
+  
+  weak var actionToEnable: UIAlertAction?
+  func setupPassword() {
+    let alert = UIAlertController(title: "Password setting", message: "Set a password to encrypt your photos", preferredStyle: .alert)
+    alert.addTextField { (textField) in
+      textField.isSecureTextEntry = true
+      textField.placeholder = "password"
+      textField.addTarget(self, action: #selector(self.textDoesExist), for: .editingChanged)
+    }
+    let action = UIAlertAction(title: "OK", style: .default, handler: { (_) in
+      // Get a password inputted by user
+      let textField = alert.textFields![0]
+      print(#line, "Password: \(textField.text)")
+      // Store the password to Keychain
+      do {
+        try self.keychain.set(textField.text!, key: "\(self.keyForPassword)")
+      } catch {
+        print(#line, error)
+      }
+    })
+    alert.addAction(action)
+    
+    self.actionToEnable = action
+    action.isEnabled = false
+    
+    self.present(alert, animated: true, completion: nil)
+  }
+  
+  func textDoesExist(sender: UITextField) {
+    self.actionToEnable?.isEnabled = !(sender.text?.isEmpty)!
+  }
+  
+  
   // MARK: Camera shot
   
   func shot(_ sender: AnyObject) {
     let connection = output.connection(withMediaType: AVMediaTypeVideo)
     output.captureStillImageAsynchronously(from: connection) {(imageDataBuffer, error) -> Void in
       let imageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-      let encryptedImageData = RNCryptor.encrypt(data: imageData, withPassword: self.password)  //NTR
+      
+      // Get a password to encrypt images from Keychain
+      let password = (self.keychain["\(self.keyForPassword)"])!
+      let encryptedImageData = RNCryptor.encrypt(data: imageData, withPassword: password)
       
       let fileName = String(self.count)
       if let directoryPath = self.directoryPath {
