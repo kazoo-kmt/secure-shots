@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		003E8BD079DFE47A73301CF3 /* Pods_pics_security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */; };
+		C9033EA21DD8E21A00646382 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9033EA11DD8E21A00646382 /* PhotosCollectionViewController.swift */; };
 		C951176E1DD7AE4500B73624 /* Pods_pics_security.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C95117711DD7AF2300B73624 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C951176F1DD7AF2300B73624 /* KeychainAccess.framework */; };
 		C95117721DD7AF2300B73624 /* RNCryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95117701DD7AF2300B73624 /* RNCryptor.framework */; };
@@ -41,6 +42,7 @@
 		1C59B4135AC2781B8ED85BF3 /* Pods-pics-security.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pics-security.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pics-security/Pods-pics-security.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE2D4241BDA1DCD7E04BF15 /* Pods_pics_security.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pics_security.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B31DFD57016E15242CF7A6E /* Pods-pics-security.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pics-security.release.xcconfig"; path = "Pods/Target Support Files/Pods-pics-security/Pods-pics-security.release.xcconfig"; sourceTree = "<group>"; };
+		C9033EA11DD8E21A00646382 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		C951176F1DD7AF2300B73624 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = "../../../../Library/Developer/Xcode/DerivedData/pics-security-hjxssdxsvhmlcpdafcgjjbttkkec/Build/Products/Debug-iphoneos/KeychainAccess/KeychainAccess.framework"; sourceTree = "<group>"; };
 		C95117701DD7AF2300B73624 /* RNCryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RNCryptor.framework; path = "../../../../Library/Developer/Xcode/DerivedData/pics-security-hjxssdxsvhmlcpdafcgjjbttkkec/Build/Products/Debug-iphoneos/RNCryptor/RNCryptor.framework"; sourceTree = "<group>"; };
 		C951842C1DD65E2E0023705B /* pics-security.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pics-security.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 			children = (
 				C951842F1DD65E2E0023705B /* AppDelegate.swift */,
 				C95184311DD65E2E0023705B /* ViewController.swift */,
+				C9033EA11DD8E21A00646382 /* PhotosCollectionViewController.swift */,
 				C95184331DD65E2E0023705B /* Main.storyboard */,
 				C95184361DD65E2E0023705B /* Assets.xcassets */,
 				C95184381DD65E2E0023705B /* LaunchScreen.storyboard */,
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9033EA21DD8E21A00646382 /* PhotosCollectionViewController.swift in Sources */,
 				C95184321DD65E2E0023705B /* ViewController.swift in Sources */,
 				C95184301DD65E2E0023705B /* AppDelegate.swift in Sources */,
 			);
