@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:pics-security.xcodeproj">
+      location = "self:SecurePics.xcodeproj">
    </FileRef>
 </Workspace>

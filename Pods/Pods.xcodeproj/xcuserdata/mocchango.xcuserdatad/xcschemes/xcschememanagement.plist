@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pics-security.xcscheme</key>
+		<key>Pods-SecurePics.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,12 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10831B103381ABD772436C6AAFBCAA7D</key>
+		<key>1FCC2421042ABBCB81606B61321147A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3AE7F311CF6FE57BB3B7B9DD2113499C</key>
+		<key>2969564B25F9DA68B306E2C269E58A28</key>
 		<dict>
 			<key>primary</key>
 			<true/>

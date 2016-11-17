@@ -1,8 +1,8 @@
 //
 //  PhotosCollectionViewController.swift
-//  pics-security
+//  SecurePics
 //
-//  Created by 小林和宏 on 11/13/16.
+//  Created by 小林和宏 on 11/16/16.
 //  Copyright © 2016 mycompany. All rights reserved.
 //
 

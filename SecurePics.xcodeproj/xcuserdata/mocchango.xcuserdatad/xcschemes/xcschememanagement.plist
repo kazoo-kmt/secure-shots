@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>pics-security.xcscheme</key>
+		<key>SecurePics.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C951842B1DD65E2E0023705B</key>
+		<key>C950469B1DDD428500A33F12</key>
 		<dict>
 			<key>primary</key>
 			<true/>

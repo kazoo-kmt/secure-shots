@@ -1,11 +1,10 @@
 //
 //  ViewController.swift
-//  pics-security
+//  SecurePics
 //
-//  Created by 小林和宏 on 11/11/16.
+//  Created by 小林和宏 on 11/16/16.
 //  Copyright © 2016 mycompany. All rights reserved.
 //
-
 import UIKit
 import AVFoundation
 import KeychainAccess
@@ -21,12 +20,12 @@ class ViewController: UIViewController {
   var timer: Timer!
   var count: Int = 0
   let numberOfShots = 10
-
+  
   let keychain = Keychain(service: "com.mycompany.pics-security")
   let keyForPassword = "keyforpassword"
   
   var label: UILabel!
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -90,7 +89,7 @@ class ViewController: UIViewController {
     albumButton.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
     albumButton.backgroundColor = UIColor.blue
     albumButton.layer.position = CGPoint(x: view.frame.width / 2 + 100, y: self.view.bounds.size.height - 80)
-//    albumButton.addTarget(self, action: #selector(segueToAlbum), for: .touchUpInside)
+    //    albumButton.addTarget(self, action: #selector(segueToAlbum), for: .touchUpInside)
     albumButton.addTarget(self, action: #selector(verifyPassword), for: .touchUpInside)
     view.addSubview(albumButton)
     
@@ -111,7 +110,7 @@ class ViewController: UIViewController {
   }
   
   @IBAction func unwindToMain(segue:UIStoryboardSegue){
-//    print(#line, "Unwind from Album to Main")
+    //    print(#line, "Unwind from Album to Main")
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -150,7 +149,7 @@ class ViewController: UIViewController {
   func getPassword() -> String? {
     do {
       let existingPassword = try self.keychain.get("\(self.keyForPassword)")
-//      print(#line, "Current password in Keychain: \(existingPassword)")
+      //      print(#line, "Current password in Keychain: \(existingPassword)")
       if existingPassword == nil {
         setupPassword()
       } else {

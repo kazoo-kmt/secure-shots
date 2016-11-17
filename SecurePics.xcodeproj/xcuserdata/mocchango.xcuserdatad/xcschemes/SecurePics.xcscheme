@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C951842B1DD65E2E0023705B"
-               BuildableName = "pics-security.app"
-               BlueprintName = "pics-security"
-               ReferencedContainer = "container:pics-security.xcodeproj">
+               BlueprintIdentifier = "C950469B1DDD428500A33F12"
+               BuildableName = "SecurePics.app"
+               BlueprintName = "SecurePics"
+               ReferencedContainer = "container:SecurePics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C951842B1DD65E2E0023705B"
-            BuildableName = "pics-security.app"
-            BlueprintName = "pics-security"
-            ReferencedContainer = "container:pics-security.xcodeproj">
+            BlueprintIdentifier = "C950469B1DDD428500A33F12"
+            BuildableName = "SecurePics.app"
+            BlueprintName = "SecurePics"
+            ReferencedContainer = "container:SecurePics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C951842B1DD65E2E0023705B"
-            BuildableName = "pics-security.app"
-            BlueprintName = "pics-security"
-            ReferencedContainer = "container:pics-security.xcodeproj">
+            BlueprintIdentifier = "C950469B1DDD428500A33F12"
+            BuildableName = "SecurePics.app"
+            BlueprintName = "SecurePics"
+            ReferencedContainer = "container:SecurePics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C951842B1DD65E2E0023705B"
-            BuildableName = "pics-security.app"
-            BlueprintName = "pics-security"
-            ReferencedContainer = "container:pics-security.xcodeproj">
+            BlueprintIdentifier = "C950469B1DDD428500A33F12"
+            BuildableName = "SecurePics.app"
+            BlueprintName = "SecurePics"
+            ReferencedContainer = "container:SecurePics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
